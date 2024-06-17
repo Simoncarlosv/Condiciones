@@ -37,7 +37,7 @@ formulario.addEventListener("submit", (event) => {
         mensaje.innerHTML=`Llevas demasiados stickers (${suma})`;
     }
 
-//    console.log(suma);
+    console.log(suma);
 })
 
 
@@ -66,5 +66,5 @@ formPass.addEventListener("submit",(event) => {
         msg.innerHTML="Contraseña INCORRECTA, vuelve a intentarlo"
     }
 
-//   console.log(union)
+    console.log(union)
 })

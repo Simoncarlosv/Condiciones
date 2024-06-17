@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Condicionales JavaScript</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+    <section class="ejercicio-uno">
+        <div class="caja-imagen">
+            <h2 class="t-seccion">Borde Imagen</h2>
+            <img src="assets/img/ak.webp" alt="Borde imagen" id="imagen">
+            <button id="alternar" onclick="
+            const imagen= document.getElementById('imagen');
+            const alt= document.getElementById('alternar');
+
+            if(!imagen.classList.contains('borde')){
+                imagen.classList.add('borde')
+            } else{
+                imagen.classList.remove('borde')
+            };
+            ">
+                Alternar
+            </button>
+        </div>
+    </section>
+
+
+    <!-- COMPROBAR CANTIDAD DE STIKERS -->
+
+    <section class="ejercicio-dos">
+        <h2 class="t-seccion">Suma y Verificación</h2>
+        <form id="formulario">
+            <div class="caja-stickers">
+                <div class="caja-form">
+                    <label for="sticker-1" class="label-sticker">
+                        <img src="assets/img/ak.webp" alt="imagen sticker">
+                    </label>
+                    <input type="number" id="sticker-uno" min="0">
+                </div>
+                <div class="caja-form">
+                    <label for="sticker-1" class="label-sticker">
+                        <img src="assets/img/ak.webp" alt="imagen sticker">
+                    </label>
+                    <input type="number" id="sticker-dos" min="0">
+                </div>
+                <div class="caja-form">
+                    <label for="sticker-1" class="label-sticker">
+                        <img src="assets/img/ak.webp" alt="imagen sticker">
+                    </label>
+                    <input type="number" id="sticker-tres" min="0">
+                </div>
+            </div>
+            <p id="mensaje-revision"></p>
+            <input type="submit" value="Revisar" id="revisar">
+        </form>
+    </section>
+
+    
+
+
+    <!-- COMPROBAR CONTRASEÑA NUMÉRICA 911 Y 714 CORRECTOS -->
+    <!-- 911 / Password 1 CORRECTO -->
+    <!-- 714 / Password 2 CORRECTO -->
+    <!-- Cualquier otra password / PASSWORD INCORRECTO -->
+
+    <section class="ejercicio-tres">
+        <h2 class="t-seccion">Contraseña</h2>
+        <p>Ingrese la <strong>contraseña</strong>:</p>
+        
+        <form action="" id="form-pass">
+            <div class="inputs-pass">
+                <select name="codigo1" id="primero">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="codigo2" id="segundo">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="codigo3" id="tercero">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <p id="msg-comprobacion"></p>
+            <input type="submit" value="Comprobar" id="comprobar">
+        </form>
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
